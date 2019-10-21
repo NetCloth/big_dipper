@@ -22,7 +22,7 @@ Forbole Block Explorer for Cosmos
 
 [Regen Network](http://bigdipper.regen.network/)
 
-## How to run The Big Dipper
+## How to run
 
 1. Copy `default_settings.json` to `settings.json`.
 2. Update the RPC and LCD URLs.
