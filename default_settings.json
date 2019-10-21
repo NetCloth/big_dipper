@@ -1,27 +1,27 @@
 {
     "public":{
-        "chainName": "Cosmos Testnet",
+        "chainName": "nch devnet v1.0.0",
         "chainId": "{Chain ID}",
         "gtm": "{Add your Google Tag Manager ID here}",
         "slashingWindow": 10000,
         "uptimeWindow": 250,
         "initialPageSize": 30,
-        "bech32PrefixAccAddr": "cosmos",
-        "bech32PrefixAccPub": "cosmospub",
-        "bech32PrefixValAddr": "cosmosvaloper",
-        "bech32PrefixValPub": "cosmosvaloperpub",
-        "bech32PrefixConsAddr": "cosmosvalcons",
-        "bech32PrefixConsPub": "cosmosvalconspub",
-        "stakingDenom": "ATOM",
-        "mintingDenom": "uatom",
+        "bech32PrefixAccAddr": "nch",
+        "bech32PrefixAccPub": "nchpub",
+        "bech32PrefixValAddr": "nchvaloper",
+        "bech32PrefixValPub": "nchvaloperpub",
+        "bech32PrefixConsAddr": "nchvalcons",
+        "bech32PrefixConsPub": "nchvalconspub",
+        "stakingDenom": "NCH",
+        "mintingDenom": "unch",
         "stakingFraction": 1000000,
         "gasPrice": 0.02,
-        "coingeckoId": "cosmos"
+        "coingeckoId": "nch"
     },
     "genesisFile": "{Replace the address of the genesis file of the chain}",
     "remote":{
-        "rpc":"https://gaia-seeds.interblock.io",
-        "lcd":"https://gaia-seeds.interblock.io:1317"
+        "rpc":"http://127.0.0.1:26657",
+        "lcd":"http://127.0.0.1:1317"
     },
     "debug": {
         "startTimer": true,

@@ -187,7 +187,7 @@ accounts:
     signInText: 'You are signed in as '
     toLoginAs: 'To log in as'
     signInWithLedger: 'Sign In With Ledger'
-    signInWarning: 'Please make sure your Ledger device is connected and <strong class="text-primary">Cosmos App 1.5.0 or above</strong> is opened.'
+    signInWarning: 'Please make sure your Ledger device is connected.'
     pleaseAccept: 'please accept in your Ledger device.'
 activities:
     single: 'A'
