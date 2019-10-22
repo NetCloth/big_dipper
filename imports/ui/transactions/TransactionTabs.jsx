@@ -16,7 +16,8 @@ export default class TransactionTabs extends Component{
             stakingTxs: {},
             distributionTxs: {},
             governanceTxs: {},
-            slashingTxs: {}
+            slashingTxs: {},
+            ipalTxs: {}
         }
     }
 
@@ -35,7 +36,8 @@ export default class TransactionTabs extends Component{
                 stakingTxs: this.props.stakingTxs,
                 distributionTxs: this.props.distributionTxs,
                 governanceTxs: this.props.governanceTxs,
-                slashingTxs: this.props.slashingTxs
+                slashingTxs: this.props.slashingTxs,
+                ipalTxs: this.props.ipalTxs
             })    
         }
     }
@@ -51,6 +53,14 @@ export default class TransactionTabs extends Component{
                             onClick={() => { this.toggle('tx-transfer'); }}
                         >
                             <T>transactions.transfer</T> ({numbro(this.state.transferTxs.length).format("0,0")})
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            className={classnames({ active: this.state.activeTab === 'tx-transfer' })}
+                            onClick={() => { this.toggle('tx-transfer'); }}
+                        >
+                            <T>transactions.transfer</T> ({numbro(this.state.ipalTxs.length).format("0,0")})
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -91,6 +101,20 @@ export default class TransactionTabs extends Component{
                         <Row>
                             <Col>
                                 {(this.state.transferTxs.length > 0)?this.state.transferTxs.map((tx, i) => {
+                                    return <TransactionRow 
+                                        key={i} 
+                                        index={i} 
+                                        tx={tx}
+                                        blockList 
+                                    />
+                                }):''}
+                            </Col>
+                        </Row>
+                    </TabPane>
+                    <TabPane tabId="tx-transfer">
+                        <Row>
+                            <Col>
+                                {(this.state.ipalTxs.length > 0)?this.state.ipalTxs.map((tx, i) => {
                                     return <TransactionRow 
                                         key={i} 
                                         index={i} 
@@ -162,4 +186,3 @@ export default class TransactionTabs extends Component{
         </Card>
     }
 }
-                    

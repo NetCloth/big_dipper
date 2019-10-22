@@ -220,3 +220,4 @@ messageTypes:
     unjail: '赦免'
     IBCTransfer: 'IBC Transfer'
     IBCReceive: 'IBC Receive'
+    ipalClaim: 'ipalClaim'

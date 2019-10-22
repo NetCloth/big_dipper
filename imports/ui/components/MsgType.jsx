@@ -50,6 +50,10 @@ export const MsgType = (props) => {
     case "nch/IBCReceiveMsg":
         return <Badge color="dark"><T>messageTypes.IBCReceive</T></Badge>;
 
+        // ipal
+    case "nch/IPALCLaim":
+        return <Badge color="dark"><T>messageTypes.ipalClaim</T></Badge>;
+        
     default:
         return <Badge color="primary">{props.type}</Badge>;
     }

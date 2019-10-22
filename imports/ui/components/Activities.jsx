@@ -87,6 +87,10 @@ export default class Activites extends Component {
         case "nch/IBCReceiveMsg":
             return <MsgType type={msg.type} />
 
+            // ipal
+        case "nch/IPALCLaim":
+            return <p><Account address={msg.value.from}/> {(this.props.invalid)?<T>activities.failedTo</T>:''}<MsgType type={msg.type}/> <T>{msg.value.user_request.params.server_ip}: {msg.value.user_request.params.user_address} </T><T>common.fullStop</T></p>
+
         default:
             return <div>{JSON.stringify(msg.value)}</div>
         }

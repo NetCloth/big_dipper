@@ -66,6 +66,11 @@ export default TransactionsContainer = withTracker((props) => {
                 {"tx.value.msg.type":"nch/IBCTransferMsg"},
                 {"tx.value.msg.type":"nch/IBCReceiveMsg"}
             ]
+        }).fetch() : {},
+        ipalTxs: transactionsExist ? Transactions.find({
+            $or: [
+                {"tx.value.msg.type":"nch/IPALCLaim"},
+            ]
         }).fetch() : {}
     };
 })(ValidatorTransactions);
