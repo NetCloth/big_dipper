@@ -27,7 +27,7 @@ export default class PowerHistory extends React.Component {
                         <Col xs={12} sm={8}>
                             {(msg.tx.value.msg && msg.tx.value.msg.length > 0)?msg.tx.value.msg.map((m, j) => {
                                 switch (m.type){
-                                case "cosmos-sdk/MsgBeginRedelegate":
+                                case "nch/MsgBeginRedelegate":
                                     return <Row key={j}>
                                         <Col xs={12}>
                                             <Row>
@@ -48,7 +48,7 @@ export default class PowerHistory extends React.Component {
                                             </Row>
                                         </Col>
                                     </Row>
-                                case "cosmos-sdk/MsgDelegate":
+                                case "nch/MsgDelegate":
                                     if (m.value.validator_address == self.props.address){
                                         return <Row key={j}>
                                             <Col xs={12}>
@@ -68,7 +68,7 @@ export default class PowerHistory extends React.Component {
                                     else{
                                         return;
                                     }
-                                case "cosmos-sdk/MsgCreateValidator":
+                                case "nch/MsgCreateValidator":
                                     return <Row key={j}>
                                         <Col xs={12}>
                                             <Row>
@@ -83,7 +83,7 @@ export default class PowerHistory extends React.Component {
                                             </Row>
                                         </Col>
                                     </Row>
-                                case "cosmos-sdk/MsgUndelegate":
+                                case "nch/MsgUndelegate":
                                     return <Row key={j}>
                                         <Col xs={12}>
                                             <Row>
@@ -107,19 +107,19 @@ export default class PowerHistory extends React.Component {
                                     <Row>
                                         {(msg.tx.value.msg && msg.tx.value.msg.length > 0)?msg.tx.value.msg.map((m,j) => {
                                             switch (m.type){
-                                            case "cosmos-sdk/MsgBeginRedelegate":
+                                            case "nch/MsgBeginRedelegate":
                                                 return <Col key={j}><Badge color="success"><T>messageTypes.redelegate</T></Badge></Col>;
-                                            case "cosmos-sdk/MsgDelegate":
+                                            case "nch/MsgDelegate":
                                                 if (m.value.validator_address == self.props.address){
                                                     return <Col key={j}><Badge color="success"><T>messageTypes.delegate</T></Badge></Col>;
                                                 }
                                                 else
                                                     return;
-                                            case "cosmos-sdk/MsgCreateValidator":
+                                            case "nch/MsgCreateValidator":
                                                 return <Col key={j}><Badge color="warning"><T>messageTypes.createValidator</T></Badge></Col>;
-                                            case "cosmos-sdk/MsgUnjail":
+                                            case "nch/MsgUnjail":
                                                 return <Col key={j}><Badge color="info"><T>messageTypes.unjail</T></Badge></Col>;
-                                            case "cosmos-sdk/MsgUndelegate":
+                                            case "nch/MsgUndelegate":
                                                 return <Col key={j}><Badge color="danger"><T>messageTypes.undelegate</T></Badge></Col>;
                                             }
                                         }):''}
