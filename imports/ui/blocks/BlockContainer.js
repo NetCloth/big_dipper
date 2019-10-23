@@ -79,8 +79,10 @@ export default BlockContainer = withTracker((props) => {
         }).fetch() : {},
         ipalTxs: transactionsExist ? Transactions.find({
             $or: [
-                {"tx.value.msg.type":"nch/IPALCLaim"}
+                {"tx.value.msg.type":"nch/IPALCLaim"},
+                {"tx.value.msg.type": "nch/ServerNodeClaim"}
             ]
         }).fetch() : {},
+        
     };
 })(Block);

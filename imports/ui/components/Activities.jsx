@@ -89,7 +89,9 @@ export default class Activites extends Component {
 
             // ipal
         case "nch/IPALCLaim":
-            return <p><Account address={msg.value.from}/> {(this.props.invalid)?<T>activities.failedTo</T>:''}<MsgType type={msg.type}/> <T>{msg.value.user_request.params.server_ip}: {msg.value.user_request.params.user_address} </T><T>common.fullStop</T></p>
+            return <p><Account address={msg.value.from}/> {(this.props.invalid)?<T>activities.failedTo</T>:''}<MsgType type={msg.type}/> user_address {msg.value.user_request.params.user_address} <T>common.fullStop</T></p>
+        case "nch/ServerNodeClaim":
+            return <p><Account address={msg.value.operator_address}/> {(this.props.invalid)?<T>activities.failedTo</T>:''}<MsgType type={msg.type}/> moniker: {msg.value.moniker} <T>common.fullStop</T></p>
 
         default:
             return <div>{JSON.stringify(msg.value)}</div>
