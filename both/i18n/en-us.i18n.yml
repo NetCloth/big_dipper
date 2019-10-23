@@ -90,6 +90,7 @@ validators:
     maxRate: 'Max Rate'
     maxChangeRate: 'Max Change Rate'
     selfDelegationRatio: 'Self Delegation Ratio'
+    lever: 'Delegation Lever'
     proposerPriority: 'Proposer Priority'
     delegatorShares: 'Delegator Shares'
     userDelegateShares: 'Shares Delegated by you'

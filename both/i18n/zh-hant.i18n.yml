@@ -90,6 +90,7 @@ validators:
     maxRate: '最大佣金限制'
     maxChangeRate: '每天最大佣金變化限制'
     selfDelegationRatio: '自我委托比列'
+    lever: '委托槓桿率'
     proposerPriority: '建塊優先權'
     delegatorShares: '委托股數'
     userDelegateShares: '你委托的股數'
