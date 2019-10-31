@@ -137,6 +137,7 @@ transactions:
     distribution: '收益分配'
     governance: '鏈上治理'
     slashing: '削減'
+    ipal: 'IPAL'
 proposals:
     notFound: '沒有治理提案'
     listOfProposals: '這名單顯示所有治理提案'
@@ -221,5 +222,5 @@ messageTypes:
     unjail: '赦免'
     IBCTransfer: 'IBC Transfer'
     IBCReceive: 'IBC Receive'
-    ipalClaim: 'ipalClaim'
+    ipalClaim: 'IPAL Claim'
     serviceNodeClaim: 'serviceNodeClaim'

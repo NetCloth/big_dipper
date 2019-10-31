@@ -69,7 +69,7 @@ export default TransactionsContainer = withTracker((props) => {
         }).fetch() : {},
         ipalTxs: transactionsExist ? Transactions.find({
             $or: [
-                {"tx.value.msg.type":"nch/IPALCLaim"},
+                {"tx.value.msg.type":"nch/IPALClaim"},
                 {"tx.value.msg.type":"nch/ServiceNodeClaim"}
             ]
         }).fetch() : {}

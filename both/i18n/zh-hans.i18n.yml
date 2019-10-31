@@ -137,6 +137,7 @@ transactions:
     distribution: '收益分配'
     governance: '链上治理'
     slashing: '削减'
+    ipal: 'IPAL'
 proposals:
     notFound: '没有治理提案'
     listOfProposals: '这名单显示所有治理提案'

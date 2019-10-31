@@ -57,14 +57,6 @@ export default class TransactionTabs extends Component{
                     </NavItem>
                     <NavItem>
                         <NavLink
-                            className={classnames({ active: this.state.activeTab === 'tx-transfer' })}
-                            onClick={() => { this.toggle('tx-transfer'); }}
-                        >
-                            <T>transactions.transfer</T> ({numbro(this.state.ipalTxs.length).format("0,0")})
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
                             className={classnames({ active: this.state.activeTab === 'tx-staking' })}
                             onClick={() => { this.toggle('tx-staking'); }}
                         >
@@ -95,6 +87,14 @@ export default class TransactionTabs extends Component{
                             <T>transactions.slashing</T> ({numbro(this.state.slashingTxs.length).format("0,0")})
                         </NavLink>
                     </NavItem>
+                    <NavItem>
+                        <NavLink
+                            className={classnames({ active: this.state.activeTab === 'tx-ipal' })}
+                            onClick={() => { this.toggle('tx-ipal'); }}
+                        >
+                            <T>transactions.ipal</T> ({numbro(this.state.ipalTxs.length).format("0,0")})
+                        </NavLink>
+                    </NavItem>
                 </Nav>
                 <TabContent activeTab={this.state.activeTab}>
                     <TabPane tabId="tx-transfer">
@@ -111,7 +111,7 @@ export default class TransactionTabs extends Component{
                             </Col>
                         </Row>
                     </TabPane>
-                    <TabPane tabId="tx-transfer">
+                    <TabPane tabId="tx-ipal">
                         <Row>
                             <Col>
                                 {(this.state.ipalTxs.length > 0)?this.state.ipalTxs.map((tx, i) => {

@@ -51,7 +51,7 @@ export const MsgType = (props) => {
         return <Badge color="dark"><T>messageTypes.IBCReceive</T></Badge>;
 
         // ipal
-    case "nch/IPALCLaim":
+    case "nch/IPALClaim":
         return <Badge color="primary"><T>messageTypes.ipalClaim</T></Badge>;
     case "nch/ServiceNodeClaim":
         return <Badge color="primary"><T>messageTypes.serviceNodeClaim</T></Badge>;

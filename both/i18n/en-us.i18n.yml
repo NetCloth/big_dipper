@@ -137,6 +137,7 @@ transactions:
     distribution: 'Distribution'
     governance: 'Governance'
     slashing: 'Slashing'
+    ipal: 'IPAL'
 proposals:
     notFound: 'No proposal found.'
     listOfProposals: 'Here is a list of governance proposals.'
@@ -221,5 +222,5 @@ messageTypes:
     unjail: 'Unjail'
     IBCTransfer: 'IBC Transfer'
     IBCReceive: 'IBC Receive'
-    ipalClaim: 'ipalClaim'
+    ipalClaim: 'IPAL Claim'
     serviceNodeClaim: 'serviceNodeClaim'
