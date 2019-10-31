@@ -222,4 +222,4 @@ messageTypes:
     IBCTransfer: 'IBC Transfer'
     IBCReceive: 'IBC Receive'
     ipalClaim: 'IPAL声明'
-    serverNodeClaim: '服务节点声明'
+    serviceNodeClaim: '服务节点声明'
