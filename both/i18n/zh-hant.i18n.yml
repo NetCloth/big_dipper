@@ -223,4 +223,4 @@ messageTypes:
     IBCTransfer: 'IBC Transfer'
     IBCReceive: 'IBC Receive'
     ipalClaim: 'IPAL Claim'
-    serviceNodeClaim: 'serviceNodeClaim'
+    cipalClaim: 'CIPAL Claim'
