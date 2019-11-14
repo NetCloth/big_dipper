@@ -24,14 +24,14 @@ export const TransactionRow = (props) => {
             return <span className="text-nowrap" key={i}>{new Coin(fee.amount).toString()}</span>
         }):<span>No fee</span>}</Col>
         {(tx.code)?<Col xs={{size:12, order:"last"}} className="error">
-            <Alert color="danger">
+            {/* <Alert color="danger">
                 <CosmosErrors
                     code={tx.code}
                     logs={tx.logs}
                     gasWanted={tx.gas_wanted}
                     gasUses={tx.gas_used}
                 />
-            </Alert>
+            </Alert> */}
         </Col>:''}
     </Row>
 }
