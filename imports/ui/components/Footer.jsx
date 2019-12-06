@@ -20,10 +20,10 @@ export default class Footer extends React.Component {
         return (
             <div>
                 <Navbar color="light" light expand="md" fixed="bottom" id="footer" className="d-none d-md-flex">
-                    <span className="text-muted"><a href="https://raw.githubusercontent.com/forbole/big_dipper/master/LICENSE" target="_blank"><T>navbar.license</T></a> &copy;2018-{moment().format('YYYY')}. </span>
+                    <span className="text-muted"><a href="https://raw.githubusercontent.com/netcloth/explorer/master/LICENSE" target="_blank"><T>navbar.license</T></a> &copy;2018-{moment().format('YYYY')}. </span>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="https://github.com/NetCloth/big_dipper" target="_blank"><i className="fab fa-github"></i> <T>navbar.forkMe</T></NavLink>
+                            <NavLink href="https://github.com/netcloth/explorer" target="_blank"><i className="fab fa-github"></i> <T>navbar.forkMe</T></NavLink>
                         </NavItem>
                     </Nav>
                 </Navbar>

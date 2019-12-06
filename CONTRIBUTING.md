@@ -3,7 +3,7 @@ Big Dipper is always free and open. We welcome everyone to contribute to the Big
 You can contribute in the following ways:
 
 ## Submit issues
-If you find any errors, bugs, questions, feature requests when you are using the Big Dipper (on [Cosmos](https://cosmos.bigdipper.live), [IRIS](https://iris.bigdipper.live), etc.), please do not hestitate to submit any [issues](https://github.com/forbole/big_dipper/issues). Any bug report and comments are welcome. We are always open to learn more about how this application can help Cosmos users.
+If you find any errors, bugs, questions, feature requests when you are using the Big Dipper (on [Cosmos](https://cosmos.bigdipper.live), [IRIS](https://iris.bigdipper.live), [NCH](https://explorer.netcloth.org),etc.), please do not hestitate to submit any [issues](https://github.com/forbole/big_dipper/issues). Any bug report and comments are welcome. We are always open to learn more about how this application can help Cosmos users.
 
 ## Create Pull Request
 If you are generous enough and can resolve some issues the Big Dipper is experiencing, please build everything in your own branch and create a Pull Request to us. We will review and merge if necessary. 
