@@ -224,3 +224,6 @@ messageTypes:
     IBCReceive: 'IBC Receive'
     ipalClaim: 'IPAL Claim'
     cipalClaim: 'CIPAL Claim'
+IPALStatistics:
+    totalUser: '總量: '
+    hour_24: '24小時新增: '
