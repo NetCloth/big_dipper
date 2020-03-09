@@ -225,5 +225,5 @@ messageTypes:
     ipalClaim: 'IPAL声明'
     cipalClaim: 'CIPAL声明'
 IPALStatistics:
-    totalUser: '总量: '
-    hour_24: '24小时新增: '
+    totalUser: 'CIPAL声明独立公钥数: '
+    hour_24: 'CIPAL24小时声明数: '

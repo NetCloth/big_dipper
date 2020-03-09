@@ -225,5 +225,5 @@ messageTypes:
     ipalClaim: 'IPAL Claim'
     cipalClaim: 'CIPALClaim'
 IPALStatistics:
-    totalUser: 'Total Count: '
-    hour_24: '24 hour: '
+    totalUser: 'CIPAL Claim Total Count: '
+    hour_24: 'CIPAL Claim 24 hour Count: '
