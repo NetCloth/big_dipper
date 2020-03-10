@@ -7,6 +7,8 @@ import {
 import numbro from 'numbro';
 import Avatar from '../components/Avatar.jsx';
 import i18n from 'meteor/universe:i18n';
+import axios from 'axios';
+
 const T = i18n.createComponent();
 
 export default class IPALStatistics extends Component {
@@ -14,8 +16,8 @@ export default class IPALStatistics extends Component {
                 super(props);
                 this.timer = 0;
                 this.state = {
-                        total: 0,
-                        hour24: "0"
+                        total: '~',
+                        hour24: "~"
                 }
         }
 
@@ -31,21 +33,21 @@ export default class IPALStatistics extends Component {
 
         tick = () => {
                 var self = this
-                fetch('https://explorer.netcloth.org/lcd/cipal/count')
-                        .then(res => res.json())
-                        .then(json => {
-                                self.setState({
-                                        total: json.result.count
-                                })
+                axios.get(`https://explorer.netcloth.org/lcd/cipal/count`)
+                .then(function (rsp) {
+                        let r = rsp.data
+                        self.setState({
+                                total:r.result.count
                         })
+                })
 
-                fetch('https://explorer.netcloth.org/cipal/count/latest/24hour')
-                        .then(res => res.json())
-                        .then(json => {
-                                self.setState({
-                                        hour24: json.result.count
-                                })
+                axios.get(`https://explorer.netcloth.org/cipal/count/latest/24hour`)
+                .then(function (rsp) {
+                        let r = rsp.data
+                        self.setState({
+                                hour24:r.result.count
                         })
+                })
         }
 
 
