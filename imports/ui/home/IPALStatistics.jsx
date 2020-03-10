@@ -31,7 +31,7 @@ export default class IPALStatistics extends Component {
 
         tick = () => {
                 var self = this
-                fetch('http://rpc.netcloth.org/cipal/count')
+                fetch('https://explorer.netcloth.org/lcd/cipal/count')
                         .then(res => res.json())
                         .then(json => {
                                 self.setState({
@@ -39,7 +39,7 @@ export default class IPALStatistics extends Component {
                                 })
                         })
 
-                fetch('http://rpc.netcloth.org/cipal/count/latest/24hour')
+                fetch('https://explorer.netcloth.org/cipal/count/latest/24hour')
                         .then(res => res.json())
                         .then(json => {
                                 self.setState({
@@ -54,7 +54,7 @@ export default class IPALStatistics extends Component {
                 const customStyle = {
                         // 原始css属性需要用引号
                         container: {
-                                "height":"25px",
+                                "height":"37px",
                                 "display": "flex",
                                 "margin-bottom":"10px",
                         },
