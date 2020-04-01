@@ -224,6 +224,8 @@ messageTypes:
     IBCReceive: 'IBC Receive'
     ipalClaim: 'IPAL声明'
     cipalClaim: 'CIPAL声明'
+    MsgContract: '合约交易'
+
 IPALStatistics:
     totalUser: 'CIPAL声明独立公钥数: '
     hour_24: 'CIPAL24小时声明数: '

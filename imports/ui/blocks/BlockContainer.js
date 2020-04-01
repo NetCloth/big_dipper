@@ -83,6 +83,11 @@ export default BlockContainer = withTracker((props) => {
                 {"tx.value.msg.type": "nch/CIPALClaim"}
             ]
         }).fetch() : {},
+        contractTxs: transactionsExist ? Transactions.find({
+            $or: [
+                {"tx.value.msg.type":"nch/MsgContract"}
+            ]
+        }).fetch() : {},
         
     };
 })(Block);

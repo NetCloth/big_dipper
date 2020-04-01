@@ -224,6 +224,8 @@ messageTypes:
     IBCReceive: 'IBC Receive'
     ipalClaim: 'IPAL Claim'
     cipalClaim: 'CIPALClaim'
+    MsgContract: 'Contract tx'
+
 IPALStatistics:
     totalUser: 'CIPAL Claim Total Count: '
     hour_24: 'CIPAL Claim 24 hour Count: '

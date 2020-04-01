@@ -56,6 +56,9 @@ export const MsgType = (props) => {
     case "nch/CIPALClaim":
         return <Badge color="primary"><T>messageTypes.cipalClaim</T></Badge>;
 
+    case "nch/MsgContract":
+        return <Badge color="dark"><T>messageTypes.MsgContract</T></Badge>;
+
     default:
         return <Badge color="primary">{props.type}</Badge>;
     }

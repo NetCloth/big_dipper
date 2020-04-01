@@ -222,8 +222,9 @@ messageTypes:
     unjail: '赦免'
     IBCTransfer: 'IBC Transfer'
     IBCReceive: 'IBC Receive'
-    ipalClaim: 'IPAL Claim'
-    cipalClaim: 'CIPAL Claim'
+    ipalClaim: 'IPAL 聲明'
+    cipalClaim: 'CIPAL 聲明'
+    MsgContract: '合约交易'
 IPALStatistics:
     totalUser: 'CIPAL聲明獨立公鑰數: '
     hour_24: 'CIPAL24小時聲明數: '

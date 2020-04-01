@@ -96,6 +96,10 @@ export default class Activites extends Component {
         case "nch/CIPALClaim":
             return <p><Account address={msg.value.from}/> {(this.props.invalid)?<T>activities.failedTo</T>:''}<MsgType type={msg.type}/> user_address {msg.value.user_request.params.user_address} <T>common.fullStop</T></p>
 
+            // contract
+        case "nch/MsgContract":
+            return <p><Account address={msg.value.from}/> {(this.props.invalid)?<T>activities.failedTo</T>:''}<MsgType type={msg.type} /><T>common.fullStop</T></p>
+
         default:
             return <div>{JSON.stringify(msg.value)}</div>
         }
