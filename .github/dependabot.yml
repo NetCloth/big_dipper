@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: styled-components
+    versions:
+    - 5.2.1
+    - 5.2.2
+  - dependency-name: d3
+    versions:
+    - 6.5.0
+    - 6.6.0
+    - 6.6.1
+    - 6.6.2
+  - dependency-name: ws
+    versions:
+    - 7.4.2
+    - 7.4.3
+    - 7.4.4
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: bech32
+    versions:
+    - 1.1.4
